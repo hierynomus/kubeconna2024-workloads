@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  ai-model:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-11-05T13:29:16.412602081Z"
+    description: A Helm chart for ai-model Mackroservices
+    digest: 2bdbc25dfb0b41bcc78cf5aa2c21dea76a169d4d48306fb6e68ec0a62a28aa06
+    keywords:
+    - challenge
+    - observability
+    maintainers:
+    - email: jeroen.vanerp@suse.com
+      name: hierynomus
+    name: ai-model
+    type: application
+    urls:
+    - ai-model-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-11-05T13:29:16.412635203Z"
