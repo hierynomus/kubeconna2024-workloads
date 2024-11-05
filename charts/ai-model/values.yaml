@@ -1,5 +1,4 @@
 nameOverride: ''
-fullnameOverride: ''
 image: ravan/mockroservice:0.0.23
 resources:
   requests:
