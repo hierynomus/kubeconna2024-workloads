@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: broken-brontosaurus
+  name: brontosaurus
   labels:
-    app: broken-brontosaurus
+    app: brontosaurus
 spec:
   selector:
     matchLabels:
-      app: broken-brontosaurus
+      app: brontosaurus
   template:
     metadata:
       labels:
-        app: broken-brontosaurus
+        app: brontosaurus
     spec:
       containers:
-      - name: broken-brontosaurus
+      - name: brontosaurus
         image: gcr.io/google-containers/busybox
         command:
           - "/bin/sh"
