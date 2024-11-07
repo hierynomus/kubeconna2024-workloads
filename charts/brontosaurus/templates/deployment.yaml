@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: broken-brontosaurus
+  labels:
+    app: broken-brontosaurus
+spec:
+  selector:
+    matchLabels:
+      app: broken-brontosaurus
+  template:
+    metadata:
+      labels:
+        app: broken-brontosaurus
+    spec:
+      containers:
+      - name: broken-brontosaurus
+        image: gcr.io/google-containers/busybox
+        command:
+          - "/bin/sh"
+          - "-c"
+          - |
+            while true; do
+              if [ \$YEAR -lt -65000000 ]; then
+                echo "I am a brontosaurus"
+                sleep 5
+              else
+                echo "It's the year \$YEAR, I am long extinct..."
+                exit 1
+              fi
+            done
+        env:
+        - name: YEAR
+          value: {{ .Values.year }}
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+
