@@ -20,6 +20,22 @@ entries:
   brontosaurus:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-11-07T11:41:42.683447355Z"
+    description: The Brontosaurus challenge
+    digest: af0739297feaeef7044936c9a774a22ad59fee440ac9f1c147b6aa692d33117f
+    keywords:
+    - challenge
+    - observability
+    maintainers:
+    - email: jeroen.vanerp@suse.com
+      name: hierynomus
+    name: brontosaurus
+    type: application
+    urls:
+    - brontosaurus-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-11-07T11:30:04.340457858Z"
     description: The Brontosaurus challenge
     digest: def18bd7bceb283df502b2495d52e56db46828a244483f763711a05d8135f147
@@ -34,4 +50,4 @@ entries:
     urls:
     - brontosaurus-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-07T11:30:04.340466825Z"
+generated: "2024-11-07T11:41:42.683510873Z"
