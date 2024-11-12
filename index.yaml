@@ -98,4 +98,18 @@ entries:
     urls:
     - brontosaurus-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-07T13:23:34.133005448Z"
+  dino-kiosk:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-11-12T13:31:01.906273252Z"
+    description: A Helm chart for dino-kiosk Mackroservices
+    digest: ca5ad760f99fed6f788fab9b13be05cf533438a3bb4b6501e0da90c7e3064dab
+    keywords:
+    - challenge
+    - observability
+    name: dino-kiosk
+    type: application
+    urls:
+    - dino-kiosk-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-11-12T13:31:01.906283981Z"
